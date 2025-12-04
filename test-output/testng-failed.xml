@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="ie"/>
+  <test thread-count="5" name="EdgeTest(failed)">
+    <classes>
+      <class name="ActualTests.LoginTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="ValidLogin"/>
+          <include name="Setup"/>
+          <include name="EmptyLogin"/>
+          <include name="InvalidLogin"/>
+        </methods>
+      </class> <!-- ActualTests.LoginTest -->
+      <class name="ActualTests.ProductTests">
+        <methods>
+          <include name="TearDown"/>
+          <include name="RemoveProductFromCart"/>
+          <include name="AddMultProductToCart"/>
+          <include name="AddOneProductCart"/>
+          <include name="SortProductBy"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- ActualTests.ProductTests -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [AutomationSuite] -->

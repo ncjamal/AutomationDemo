@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-04T18:11:47 IST" name="AutomationSuite" finished-at="2025-12-04T18:14:00 IST" duration-ms="132578">
+    <groups>
+    </groups>
+    <test started-at="2025-12-04T18:11:47 IST" name="ChromeTest" finished-at="2025-12-04T18:14:00 IST" duration-ms="132578">
+      <class name="ActualTests.ProductTests">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:12:48 IST" name="Setup" finished-at="2025-12-04T18:13:00 IST" duration-ms="12461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="AddOneProductCart()[pri:1, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:00 IST" name="AddOneProductCart" finished-at="2025-12-04T18:13:02 IST" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddOneProductCart -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:02 IST" name="TearDown" finished-at="2025-12-04T18:13:05 IST" duration-ms="2980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:05 IST" name="Setup" finished-at="2025-12-04T18:13:18 IST" duration-ms="12253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="AddMultProductToCart()[pri:2, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:18 IST" name="AddMultProductToCart" finished-at="2025-12-04T18:13:20 IST" duration-ms="2624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddMultProductToCart -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:20 IST" name="TearDown" finished-at="2025-12-04T18:13:23 IST" duration-ms="2969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:23 IST" name="Setup" finished-at="2025-12-04T18:13:37 IST" duration-ms="13347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="RemoveProductFromCart()[pri:3, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:37 IST" name="RemoveProductFromCart" finished-at="2025-12-04T18:13:39 IST" duration-ms="2430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveProductFromCart -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:39 IST" name="TearDown" finished-at="2025-12-04T18:13:42 IST" duration-ms="2857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:42 IST" name="Setup" finished-at="2025-12-04T18:13:54 IST" duration-ms="12116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="SortProductBy()[pri:4, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:54 IST" name="SortProductBy" finished-at="2025-12-04T18:13:57 IST" duration-ms="2522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortProductBy -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@8f4ea7c]" started-at="2025-12-04T18:13:57 IST" name="TearDown" finished-at="2025-12-04T18:14:00 IST" duration-ms="2964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- ActualTests.ProductTests -->
+      <class name="ActualTests.LoginTest">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:11:47 IST" name="Setup" finished-at="2025-12-04T18:12:06 IST" duration-ms="19269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="ValidLogin()[pri:1, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:06 IST" name="ValidLogin" finished-at="2025-12-04T18:12:11 IST" duration-ms="4356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:11 IST" name="TearDown" finished-at="2025-12-04T18:12:14 IST" duration-ms="2825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:14 IST" name="Setup" finished-at="2025-12-04T18:12:27 IST" duration-ms="13011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="InvalidLogin()[pri:2, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:27 IST" name="InvalidLogin" finished-at="2025-12-04T18:12:28 IST" duration-ms="1317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:28 IST" name="TearDown" finished-at="2025-12-04T18:12:31 IST" duration-ms="3047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:31 IST" name="Setup" finished-at="2025-12-04T18:12:44 IST" duration-ms="12871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="EmptyLogin()[pri:3, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:44 IST" name="EmptyLogin" finished-at="2025-12-04T18:12:45 IST" duration-ms="913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@6e20b53a]" started-at="2025-12-04T18:12:45 IST" name="TearDown" finished-at="2025-12-04T18:12:48 IST" duration-ms="3076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- ActualTests.LoginTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- AutomationSuite -->
+</testng-results>
