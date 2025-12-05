@@ -6,3 +6,58 @@ target/
 *.jar
 *.war
 *.ear
+# IDEs
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Eclipse
+.settings/
+.classpath
+.project
+.metadata/
+bin/
+
+# VSCode
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+logs/
+tmp/
+temp/
+
+# Test / build tools
+surefire-reports/
+failsafe-reports/
+report-output/
+coverage/
+
+# WebDriver / driver binaries (keep drivers in repo only if needed intentionally)
+Drivers/
+*.exe
+*.msi
+
+# Credentials / config
+*.env
+secret*.properties
+credentials.properties
+
+# Others
+node_modules/
+*.zip
+*.tgz
+
+# Lock files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Keep .gitignore itself
+!.gitignore
