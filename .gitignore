@@ -1,1 +1,8 @@
-/target/
+
+# Maven / Java
+target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
