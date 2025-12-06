@@ -17,6 +17,9 @@ public class BrowserFactory {
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
+			option.addArguments("--headless");
+			option.addArguments("--no-sandbox");
+			option.addArguments("--disable-dev-shm-usage");
 			option.addArguments("--incognito");
 			return new ChromeDriver(option);
 		}
@@ -24,6 +27,7 @@ public class BrowserFactory {
 		{
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions option = new FirefoxOptions();
+			option.addArguments("--headless");
 			option.addArguments("--private");
 			return new FirefoxDriver(option);
 		}

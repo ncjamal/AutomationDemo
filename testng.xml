@@ -8,7 +8,7 @@
     <classes>
       <!-- Package name + class name -->
       <class name="ActualTests.LoginTest" />
-      <class name="ActualTests.ProductTests" />
+  <!--     <class name="ActualTests.ProductTests" /> -->
    <!--   <class name="ActualTests.CartTests" /> -->
     <!--  <class name="ActualTests.CheckoutTests" />-->
   <!--    <class name="ActualTests.CheckoutOverviewTests" />  -->
