@@ -15,56 +15,56 @@ jobs:
         browser: [ chrome, firefox ]
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    - name: Set up Java 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
 
-    - name: Cache Maven Dependencies
-      uses: actions/cache@v4
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+      - name: Cache Maven Dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
 
-    - name: Run Tests on ${{ matrix.browser }}
-      run: mvn clean test -Dbrowser=${{ matrix.browser }}
+      - name: Run Tests on ${{ matrix.browser }}
+        run: mvn clean test -Dbrowser=${{ matrix.browser }}
 
-    - name: Upload Test Report
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: test-report-${{ matrix.browser }}
-        path: target/surefire-reports/
-		
-		deploy-report:
-		    needs: test
-		    runs-on: ubuntu-latest
-		    if: success()
+      - name: Upload Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report-${{ matrix.browser }}
+          path: target/surefire-reports/
 
-		    steps:
-		    - name: Checkout Code
-		      uses: actions/checkout@v4
+  deploy-report:
+    needs: test
+    runs-on: ubuntu-latest
+    if: success()
 
-		    - name: Download Test Reports (Chrome)
-		      uses: actions/download-artifact@v4
-		      with:
-		        name: test-report-chrome
-		        path: site/chrome
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-		    - name: Download Test Reports (Firefox)
-		      uses: actions/download-artifact@v4
-		      with:
-		        name: test-report-firefox
-		        path: site/firefox
+      - name: Download Test Reports (Chrome)
+        uses: actions/download-artifact@v4
+        with:
+          name: test-report-chrome
+          path: site/chrome
 
-		    - name: Deploy to GitHub Pages
-		      uses: peaceiris/actions-gh-pages@v4
-		      with:
-		        github_token: ${{ secrets.GITHUB_TOKEN }}
-		        publish_dir: site
+      - name: Download Test Reports (Firefox)
+        uses: actions/download-artifact@v4
+        with:
+          name: test-report-firefox
+          path: site/firefox
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
