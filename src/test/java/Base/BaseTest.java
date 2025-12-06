@@ -35,10 +35,10 @@ public class BaseTest {
 	@AfterMethod
 	public void TearDown()
 	{
-if(driver!=null)
-{
-		driver.close();
-}
+//if(driver!=null)
+//{
+//		driver.close();
+//}
 	}
 	
 }
