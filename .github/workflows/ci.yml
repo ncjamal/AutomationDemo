@@ -41,3 +41,30 @@ jobs:
       with:
         name: test-report-${{ matrix.browser }}
         path: target/surefire-reports/
+		
+		deploy-report:
+		    needs: test
+		    runs-on: ubuntu-latest
+		    if: success()
+
+		    steps:
+		    - name: Checkout Code
+		      uses: actions/checkout@v4
+
+		    - name: Download Test Reports (Chrome)
+		      uses: actions/download-artifact@v4
+		      with:
+		        name: test-report-chrome
+		        path: site/chrome
+
+		    - name: Download Test Reports (Firefox)
+		      uses: actions/download-artifact@v4
+		      with:
+		        name: test-report-firefox
+		        path: site/firefox
+
+		    - name: Deploy to GitHub Pages
+		      uses: peaceiris/actions-gh-pages@v4
+		      with:
+		        github_token: ${{ secrets.GITHUB_TOKEN }}
+		        publish_dir: site
