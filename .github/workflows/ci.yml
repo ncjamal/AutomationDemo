@@ -42,33 +42,34 @@ jobs:
           name: test-report-${{ matrix.browser }}
           path: target/surefire-reports/
 
-		  deploy-report:
-		      needs: test
-		      runs-on: ubuntu-latest
+  deploy-report:
+    needs: test
+    runs-on: ubuntu-latest
+    if: success()
 
-		      steps:
-		        - name: Download Test Reports (Chrome)
-		          uses: actions/download-artifact@v4
-		          with:
-		            name: test-report-chrome
-		            path: site/chrome
+    steps:
+      - name: Download Test Reports (Chrome)
+        uses: actions/download-artifact@v4
+        with:
+          name: test-report-chrome
+          path: site/chrome
 
-		        - name: Download Test Reports (Firefox)
-		          uses: actions/download-artifact@v4
-		          with:
-		            name: test-report-firefox
-		            path: site/firefox
+      - name: Download Test Reports (Firefox)
+        uses: actions/download-artifact@v4
+        with:
+          name: test-report-firefox
+          path: site/firefox
 
-		        - name: Create index.html
-		          run: |
-		            echo "<html><body>" > site/index.html
-		            echo "<h1>Automation Test Reports</h1>" >> site/index.html
-		            echo "<a href='chrome/index.html'>Chrome Report</a><br>" >> site/index.html
-		            echo "<a href='firefox/index.html'>Firefox Report</a>" >> site/index.html
-		            echo "</body></html>" >> site/index.html
+      - name: Create index.html
+        run: |
+          echo "<html><body>" > site/index.html
+          echo "<h1>Automation Test Reports</h1>" >> site/index.html
+          echo "<a href='chrome/index.html'>Chrome Report</a><br>" >> site/index.html
+          echo "<a href='firefox/index.html'>Firefox Report</a>" >> site/index.html
+          echo "</body></html>" >> site/index.html
 
-		        - name: Deploy to GitHub Pages
-		          uses: peaceiris/actions-gh-pages@v4
-		          with:
-		            github_token: ${{ secrets.GITHUB_TOKEN }}
-		            publish_dir: site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
