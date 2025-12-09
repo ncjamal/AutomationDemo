@@ -12,7 +12,6 @@
    <!--   <class name="ActualTests.CartTests" /> -->
     <!--  <class name="ActualTests.CheckoutTests" />-->
   <!--    <class name="ActualTests.CheckoutOverviewTests" />  -->
-   <!-- <class name="ActualTests.CheckoutCompleteTests" /> -->
     </classes>
   </test>
   
