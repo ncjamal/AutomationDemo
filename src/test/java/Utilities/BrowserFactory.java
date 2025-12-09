@@ -27,7 +27,7 @@ public class BrowserFactory {
 			
 			if(headless)
 			{
-				option.addArguments("--headless=new");
+				option.addArguments("--headless");
 			}
 			
 			option.addArguments("--incognito");
