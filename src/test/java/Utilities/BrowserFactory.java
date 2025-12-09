@@ -46,7 +46,7 @@ public class BrowserFactory {
 				option.addArguments("--headless");
 			}
 			
-			//option.addArguments("--private");
+			option.addArguments("--private");
 			return new FirefoxDriver(option);
 		}
 		else if (browser.equalsIgnoreCase("ie"))
