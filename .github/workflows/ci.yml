@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Run Tests on ${{ matrix.browser }}
-        run: mvn clean test -Dbrowser=${{ matrix.browser }}
+        run: mvn clean test -Dbrowser=${{ matrix.browser }} -Dheadless=true
 
       - name: Upload Test Report
         if: always()

@@ -1,5 +1,7 @@
 package Utilities;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,22 +14,38 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
-	public static WebDriver getDriver(String browser)
+	public static WebDriver getBrowser(String browser) throws IOException
 	{
+		 configReader.loadConfig();
+		 browser = System.getProperty("browser", configReader.get("browser")); //default is chrome
+		 boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false")); //dafault is non-headless
+		 
 		if(browser.equalsIgnoreCase("chrome"))
 		{
+			WebDriverManager.chromedriver().setup();
 			ChromeOptions option = new ChromeOptions();
-			option.addArguments("--headless");
+			
+			if(headless)
+			{
+				option.addArguments("--headless");
+			}
+			
+			option.addArguments("--incognito");
 			option.addArguments("--no-sandbox");
 			option.addArguments("--disable-dev-shm-usage");
-			option.addArguments("--incognito");
+			
 			return new ChromeDriver(option);
 		}
 		else if(browser.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions option = new FirefoxOptions();
-			option.addArguments("--headless");
+			
+			if(headless)
+			{
+				option.addArguments("--headless");
+			}
+			
 			option.addArguments("--private");
 			return new FirefoxDriver(option);
 		}

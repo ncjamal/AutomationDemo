@@ -24,7 +24,7 @@ public class BaseTest {
 		 Path = configReader.get("ExcelPath");
 		 DataPath =System.getProperty("user.dir") + Path;
 		
-		 driver = BrowserFactory.getDriver(browser);
+		 driver = BrowserFactory.getBrowser(browser);
 //		ChromeOptions option=new ChromeOptions();
 //		option.addArguments("--incognito");
 //		driver = new ChromeDriver(option);
@@ -37,7 +37,7 @@ public class BaseTest {
 	{
 //if(driver!=null)
 //{
-//		driver.close();
+//	driver.close();
 //}
 	}
 	
