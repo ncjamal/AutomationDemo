@@ -34,7 +34,7 @@ pipeline {
             publishHTML(target: [
                 reportName : 'TestNG Report',
                 reportDir  : 'test-output',
-                reportFiles: 'emailable-report.html',
+                reportFiles: 'index.html',
                 keepAll    : true
             ])
         }
