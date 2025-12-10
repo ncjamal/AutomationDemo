@@ -29,28 +29,29 @@ pipeline {
         }
 
         stage('Deploy Report to GitHub Pages') {
-            steps {
-                withCredentials([string(credentialsId: 'github-token', variable: 'TOKEN')]) {
-                    bat """
-                        git config --global user.email "jenkins@example.com"
-                        git config --global user.name "Jenkins"
+    steps {
+        withCredentials([string(credentialsId: 'github-token', variable: 'TOKEN')]) {
+            bat """
+                git config --global user.email "jenkins@example.com"
+                git config --global user.name "Jenkins"
 
-                        if exist gh-pages rmdir /s /q gh-pages
-                        git clone --branch gh-pages https://%TOKEN%@github.com/ncjamal/AutomationDemo.git gh-pages
+                if exist gh-pages rmdir /s /q gh-pages
+                git clone --branch gh-pages https://%TOKEN%@github.com/ncjamal/AutomationDemo.git gh-pages
 
-                        cd gh-pages
+                cd gh-pages
 
-                        mkdir jenkins-build-%BUILD_NUMBER%
-                        xcopy /E /I /Y ..\\test-output\\* jenkins-build-%BUILD_NUMBER%\\
+                mkdir jenkins-build-%BUILD_NUMBER%
+                xcopy /E /I /Y ..\\test-output\\* jenkins-build-%BUILD_NUMBER%\\
 
-                        git add .
-                        git commit -m "Jenkins deploy report for build %BUILD_NUMBER%"
-                        git push
-                    """
-                }
-            }
+                git add .
+                git commit -m "Jenkins deploy report for build %BUILD_NUMBER%"
+
+                git remote set-url origin https://%TOKEN%@github.com/ncjamal/AutomationDemo.git
+                git push origin gh-pages
+            """
         }
     }
+}
 
     post {
         always {
