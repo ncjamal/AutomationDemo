@@ -167,6 +167,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;AutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Utilities.TestNameListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -214,15 +217,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ValidLogin')
 data.setCell(0, 2, 'ActualTests.LoginTest')
-data.setCell(0, 3, 995);
+data.setCell(0, 3, 1103);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'InvalidLogin')
 data.setCell(1, 2, 'ActualTests.LoginTest')
-data.setCell(1, 3, 231);
+data.setCell(1, 3, 234);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'EmptyLogin')
 data.setCell(2, 2, 'ActualTests.LoginTest')
-data.setCell(2, 3, 208);
+data.setCell(2, 3, 227);
 window.suiteTableData['AutomationSuite']= { tableData: data, tableDiv: 'times-div-AutomationSuite'}
 return data;
 }
@@ -260,35 +263,35 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ValidLogin</span>
-                <span class="method-start">9401 ms</span>
+                <span class="method-start">14547 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">10397 ms</span>
+                <span class="method-start">15652 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup(chrome)</span>
-                <span class="method-start">10509 ms</span>
+                <span class="method-start">15773 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">InvalidLogin</span>
-                <span class="method-start">11150 ms</span>
+                <span class="method-start">16321 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">11382 ms</span>
+                <span class="method-start">16555 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup(chrome)</span>
-                <span class="method-start">11487 ms</span>
+                <span class="method-start">16660 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">EmptyLogin</span>
-                <span class="method-start">12028 ms</span>
+                <span class="method-start">17097 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">12237 ms</span>
+                <span class="method-start">17325 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
