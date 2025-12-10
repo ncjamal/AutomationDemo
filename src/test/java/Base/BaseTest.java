@@ -25,9 +25,6 @@ public class BaseTest {
 		 DataPath =System.getProperty("user.dir") + Path;
 		
 		 driver = BrowserFactory.getBrowser(browser);
-//		ChromeOptions option=new ChromeOptions();
-//		option.addArguments("--incognito");
-//		driver = new ChromeDriver(option);
 	
 		driver.get(URL);
 		driver.manage().window().maximize();
@@ -35,10 +32,10 @@ public class BaseTest {
 	@AfterMethod
 	public void TearDown()
 	{
-//if(driver!=null)
-//{
-//	driver.close();
-//}
+if(driver!=null)
+{
+	driver.close();
+}
 	}
 	
 }
