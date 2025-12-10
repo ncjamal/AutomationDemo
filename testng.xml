@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="AutomationSuite" verbose="2" parallel="false">
 <listeners>
-    <listener class-name="utils.TestNameListener"/>
+    <listener class-name="Utilities.TestNameListener"/>
 </listeners>
   
   <test name="ChromeTest">
