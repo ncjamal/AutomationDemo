@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-01T04:43:04 UTC" name="AutomationSuite" finished-at="2026-04-01T04:43:20 UTC" duration-ms="15086">
+  <suite started-at="2026-04-01T04:55:20 UTC" name="AutomationSuite" finished-at="2026-04-01T04:55:35 UTC" duration-ms="15237">
     <groups>
     </groups>
-    <test started-at="2026-04-01T04:43:04 UTC" name="ChromeTest" finished-at="2026-04-01T04:43:20 UTC" duration-ms="15086">
+    <test started-at="2026-04-01T04:55:20 UTC" name="ChromeTest" finished-at="2026-04-01T04:55:35 UTC" duration-ms="15237">
       <class name="ActualTests.ProductTests">
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:15 UTC" name="Setup" finished-at="2026-04-01T04:43:15 UTC" duration-ms="664" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:31 UTC" name="Setup" finished-at="2026-04-01T04:55:32 UTC" duration-ms="458" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="AddOneProductCart()[pri:1, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:15 UTC" name="AddOneProductCart" finished-at="2026-04-01T04:43:16 UTC" duration-ms="425" status="PASS">
+        <test-method signature="AddOneProductCart()[pri:1, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:32 UTC" name="AddOneProductCart" finished-at="2026-04-01T04:55:32 UTC" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddOneProductCart -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:16 UTC" name="TearDown" finished-at="2026-04-01T04:43:16 UTC" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:32 UTC" name="TearDown" finished-at="2026-04-01T04:55:32 UTC" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:16 UTC" name="Setup" finished-at="2026-04-01T04:43:17 UTC" duration-ms="643" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:32 UTC" name="Setup" finished-at="2026-04-01T04:55:33 UTC" duration-ms="473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="AddMultProductToCart()[pri:2, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:17 UTC" name="AddMultProductToCart" finished-at="2026-04-01T04:43:17 UTC" duration-ms="480" status="PASS">
+        <test-method signature="AddMultProductToCart()[pri:2, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:33 UTC" name="AddMultProductToCart" finished-at="2026-04-01T04:55:33 UTC" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddMultProductToCart -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:17 UTC" name="TearDown" finished-at="2026-04-01T04:43:17 UTC" duration-ms="60" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:33 UTC" name="TearDown" finished-at="2026-04-01T04:55:33 UTC" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:17 UTC" name="Setup" finished-at="2026-04-01T04:43:18 UTC" duration-ms="652" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:33 UTC" name="Setup" finished-at="2026-04-01T04:55:34 UTC" duration-ms="453" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="RemoveProductFromCart()[pri:3, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:18 UTC" name="RemoveProductFromCart" finished-at="2026-04-01T04:43:18 UTC" duration-ms="573" status="PASS">
+        <test-method signature="RemoveProductFromCart()[pri:3, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:34 UTC" name="RemoveProductFromCart" finished-at="2026-04-01T04:55:34 UTC" duration-ms="544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveProductFromCart -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:18 UTC" name="TearDown" finished-at="2026-04-01T04:43:18 UTC" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:34 UTC" name="TearDown" finished-at="2026-04-01T04:55:34 UTC" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:18 UTC" name="Setup" finished-at="2026-04-01T04:43:19 UTC" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:34 UTC" name="Setup" finished-at="2026-04-01T04:55:35 UTC" duration-ms="429" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,17 +75,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="SortProductBy()[pri:4, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:19 UTC" name="SortProductBy" finished-at="2026-04-01T04:43:19 UTC" duration-ms="417" status="PASS">
+        <test-method signature="SortProductBy()[pri:4, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:35 UTC" name="SortProductBy" finished-at="2026-04-01T04:55:35 UTC" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortProductBy -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:43:19 UTC" name="TearDown" finished-at="2026-04-01T04:43:20 UTC" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.ProductTests@47d90b9e]" started-at="2026-04-01T04:55:35 UTC" name="TearDown" finished-at="2026-04-01T04:55:35 UTC" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- ActualTests.ProductTests -->
       <class name="ActualTests.LoginTest">
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:05 UTC" name="Setup" finished-at="2026-04-01T04:43:12 UTC" duration-ms="7181" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:20 UTC" name="Setup" finished-at="2026-04-01T04:55:29 UTC" duration-ms="8520" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,15 +96,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="ValidLogin()[pri:1, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:12 UTC" name="ValidLogin" finished-at="2026-04-01T04:43:13 UTC" duration-ms="805" status="PASS">
+        <test-method signature="ValidLogin()[pri:1, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:29 UTC" name="ValidLogin" finished-at="2026-04-01T04:55:29 UTC" duration-ms="836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:13 UTC" name="TearDown" finished-at="2026-04-01T04:43:13 UTC" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:29 UTC" name="TearDown" finished-at="2026-04-01T04:55:29 UTC" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:13 UTC" name="Setup" finished-at="2026-04-01T04:43:13 UTC" duration-ms="748" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:29 UTC" name="Setup" finished-at="2026-04-01T04:55:30 UTC" duration-ms="555" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,15 +115,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="InvalidLogin()[pri:2, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:13 UTC" name="InvalidLogin" finished-at="2026-04-01T04:43:14 UTC" duration-ms="241" status="PASS">
+        <test-method signature="InvalidLogin()[pri:2, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:30 UTC" name="InvalidLogin" finished-at="2026-04-01T04:55:30 UTC" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidLogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:14 UTC" name="TearDown" finished-at="2026-04-01T04:43:14 UTC" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:30 UTC" name="TearDown" finished-at="2026-04-01T04:55:30 UTC" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:14 UTC" name="Setup" finished-at="2026-04-01T04:43:14 UTC" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="Setup(java.lang.String)[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:30 UTC" name="Setup" finished-at="2026-04-01T04:55:31 UTC" duration-ms="463" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,11 +134,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="EmptyLogin()[pri:3, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:14 UTC" name="EmptyLogin" finished-at="2026-04-01T04:43:15 UTC" duration-ms="226" status="PASS">
+        <test-method signature="EmptyLogin()[pri:3, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:31 UTC" name="EmptyLogin" finished-at="2026-04-01T04:55:31 UTC" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyLogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:43:15 UTC" name="TearDown" finished-at="2026-04-01T04:43:15 UTC" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ActualTests.LoginTest@71b1176b]" started-at="2026-04-01T04:55:31 UTC" name="TearDown" finished-at="2026-04-01T04:55:31 UTC" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
