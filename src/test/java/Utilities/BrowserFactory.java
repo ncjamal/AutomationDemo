@@ -49,9 +49,9 @@ public class BrowserFactory {
 			option.addArguments("--private");
 			return new FirefoxDriver(option);
 		}
-		else if (browser.equalsIgnoreCase("ie"))
+		else if (browser.equalsIgnoreCase("edge"))
 		{
-			WebDriverManager.iedriver().setup();
+			WebDriverManager.edgedriver().setup();
 			//System.setProperty("webdriver.edge.driver", "Drivers/msedgedriver.exe");
 			//IeOptions option = new EdgeOptions();
 			//option.addArguments("--inprivate");

@@ -55,7 +55,6 @@
     <artifactId>webdrivermanager</artifactId>
     <version>5.7.0</version>
 </dependency>
-
 </dependencies>
 
     <build>
@@ -69,6 +68,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <printSummary>true</printSummary>
+        			<reportFormat>brief</reportFormat>
+        			<useFile>false</useFile>
                 </configuration>
             </plugin>
         </plugins>
