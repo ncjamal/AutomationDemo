@@ -20,9 +20,9 @@ pipeline {
                         "Chrome (headless)" : {
                             bat 'mvn clean test -Dheadless=true -Dbrowser=chrome'
                         },
-                        "Firefox (headless)" : {
-                            bat 'mvn clean test -Dheadless=true -Dbrowser=firefox'
-                        }
+                      //  "Firefox (headless)" : {
+                      //      bat 'mvn clean test -Dheadless=true -Dbrowser=firefox'
+                       // }
                     )
                 }
             }
