@@ -22,7 +22,8 @@ public class BrowserFactory {
 		 
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
+
+			WebDriverManager.chromedriver().clearDriverCache().setup();
 			ChromeOptions option = new ChromeOptions();
 			
 			if(headless)
